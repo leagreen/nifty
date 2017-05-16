@@ -1,12 +1,13 @@
 <?php include 'header.php';?>
 
 <main>
-    <section class="Featured ContactFeatured col-md-6">
+    <section class="Featured">
         <h1>Many Ways to Contact Us</h1>
         <p><em>And we respond fast!</em></p>
-        <hr>
+    </section>
+    
+    <section class="Featured ContactFeatured col-md-6">
         <p>Our expert  staff can answer questions about</p>
-        
         <ul>
             <li>Tour Packages and Prices</li>
             <li>Airplane schedules</li>
@@ -15,9 +16,8 @@
             <li>Language issues</li>
             <li>and much more</li>
         </ul>
-    
     </section>
-    
+  
     <section class="Featured col-md-6">
         <h2>Nifty Tours</h2>
         <p>12000 Southwest 49th Avenue</p>
@@ -25,9 +25,10 @@
         <p>&nbsp;</p>
         <p>(503) 555-1212</p>
     </section>
-    <div class="toplowerbar"></div>
+     <div class="toplowerbar col-md-12"></div>
     
-    <section class="RelatedLinks FirstLink">
+    <section class="RelatedLinks FirstLink" style="padding-bottom:30px !important;">
+
         <h2>Please Use This Convenient Form</h2>
 
         <form action="formaction.php" method="post" name="contact" id="contact">
@@ -63,7 +64,7 @@
                </tr>
                <tr>
                    <td>&nbsp;</td>
-                   <td><input type="submit" name="submit" id="submit" value="Click to Send"></td>
+                   <td id="submitTD"><input type="submit" name="submit" id="submit" value="Click to Send"></td>
                </tr>
             </table>
         </form>

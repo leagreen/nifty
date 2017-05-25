@@ -14,16 +14,31 @@ body {
     margin-bottom: 0px;
 }
 
+.formColor {
+    color: black;
+}
+
 #copyrightFull {
     font-size: 1.2em;
-    padding-top: 
+}
+
+#currency-widget {
+    width: 223px;
 }
 
 .Featured {
     display: inline-block;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    .full-width;
+    .horiz-padding-3;
+}
+
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 .Featured h1 {
@@ -37,7 +52,7 @@ body {
 }
 
 .Featured h2, .Featured h3 {
-    color: #482D3C;
+    color: @darkest-purple;
 }
 
 .Featured p {
@@ -45,15 +60,15 @@ body {
 }
 
 .FirstLink {
-    background-color: #482D3C;
+    background-color: @darkest-purple;
 }
 
 footer {
-    background-color: #745577;
-    color: white;
+    background-color: @light-purple;
+    .white-text;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    .full-width;
     height: 60px;
 }
 
@@ -75,22 +90,22 @@ html {
 }
 
 main {
-    text-align: center;
+    .center-text;
     margin-bottom: 60px;
     font-family: Varela, Arial, Helvetica, sans-serif;
 }
 
 main a {
     font-weight: bold;
-    color: #B07995;
+    color: @pink;
 }
 
 .navbar {
-    background-color: #745577;
+    background-color: @light-purple;
 }
 
 .navbar-brand p {
-    color: #DED400;
+    color: @light-green;
     font-size: 2em;
     font-weight: 600;
     text-shadow: white 2px 2px;
@@ -99,7 +114,7 @@ main a {
 }
 
 .navbar li {
-    text-align: center;
+    .center-text;
 }
 
 .navbar li a {
@@ -107,12 +122,8 @@ main a {
     text-decoration: none;
 }
 
-.navbar li a, .navbar li {
-    color: white;
-}
-
 .nav li a:hover {
-    background-color: #996f9d !important;
+    background-color: @lightest-purple; !important;
 }
 
 #phone {
@@ -120,49 +131,65 @@ main a {
 }
 
 .RelatedLinks {
-    display: inline-block;
-    padding-left: 3%;
-    padding-right: 3%;
+    .horiz-padding-3;
 }
 
 .RelatedLinks h2 {
     text-transform: uppercase;
-    color: #DED400;
+    color: @light-green;
+    padding-top: 2%;
 }
 
 .RelatedLinks h3 {
-    color: #B07995;
+    color: @pink;
     font-size: 2em;
 }
 
+.RelatedLinks table {
+    .auto-margin;
+}
+
 .RelatedLinks p, .RelatedLinks label {
-    color: #be97ac;
+    color: @pale-pink;
     font-size: 1.3em;
 }
 
+#DayTable {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.RelatedLinks th, .RelatedLinks td {
+    .center-text !important;
+    .white-text;
+} 
+
 .RelatedLinks em {
-    color: white;
+    .white-text;
     font-size: 1.3em;
 }
 
 .SecondLink {
-    background-color: #5d3c4e;
+    background-color: @darker-purple:;
 }
 
 .ThirdLink {
-    background-color: #482D3C;
+    background-color: @dark-purple;
 }
 
 .topupperbar {
-	background-color: #DED400;
-	height: 10px;
-	width: 100%;
+	background-color: @light-green;
+	.div-bars;
+}
+
+.top-level-link {
+    .white-text;
 }
 
 .toplowerbar {
-	background-color: #745577;
+	background-color: @light-purple;
 	height: 10px;
-	width: 100%;
+	.div-bars;
 }
 
 /* ===== == = === Mobile Phone Only === = == ===== */
@@ -185,6 +212,10 @@ main a {
     #SMicons {
         padding-top: .5%;
     }
+    
+    .FirstLink h2 {
+        margin-top: 0;
+    }
 }
 
 /* ===== == = === Tablet === = == ===== */
@@ -197,19 +228,15 @@ main a {
 
 /* Replaces Social Media (SM) Link Icons with SM Feed */
     #copyrightFull, #SMFeed {
-        text-align: center;
+        .center-text;
     }
     
-    #SMicons, #copyrightMobile {
+    #SMicons, #copyrightMobile, #phone {
         display: none;
     }
     
     .navbar li {
         font-size: 1em;
-    }
-    
-    #phone {
-        display: none;
     }
     
     .RelatedLinks h2 {
@@ -222,6 +249,10 @@ main a {
     
     .RelatedLinks p {
         padding-left: 4%;
+    }
+    
+    .FirstLink h2 {
+        margin-top: 0;
     }
 }
 /* ===== == = === Desk Top === = == ===== */
@@ -238,7 +269,7 @@ main a {
     }
     
     #copyrightFull, #SMFeed {
-        text-align: center;
+        .center-text;
     }
     
     #phone {

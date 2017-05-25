@@ -1,0 +1,373 @@
+// out: styles.css
+
+/* ===== == = === Base LESS Styles === = == ===== */
+
+.div-bars {
+    width: 100%;
+    height: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.white-text {
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.auto-margin {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.horiz-padding-4 {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+
+
+@pink: #B07995;
+@pale-pink: #be97ac;
+@lightest-purple: #996f9d;
+@light-purple: #745577;
+@darker-purple: #5d3c4e;
+@darkest-purple: #482D3C;
+@light-green: #DED400;
+
+/* ===== == = === Base CSS Styles === = == ===== */
+
+body {
+    font-size: 1em;
+    padding-top: 50px;
+    margin-bottom: 60px;
+    background-image: url("images/nifty-map.png");
+}
+
+.ContactFeatured li {
+    list-style: none;
+}
+
+#contact td {
+    padding-bottom: 2%;
+}
+
+#copyrightMobile {
+    margin-bottom: 0px;
+}
+
+.formColor {
+    color: black;
+}
+
+#copyrightFull {
+    font-size: 1.2em;
+}
+
+#currency-widget {
+    width: 223px;
+}
+
+.Featured {
+    display: inline-block;
+    .full-width;
+    .horiz-padding-4;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.Featured h1 {
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.Featured h2 {
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+
+.Featured h2, .Featured h3 {
+    color: @darkest-purple;
+}
+
+.Featured p {
+    font-size: 1.6em
+}
+
+.Featured ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.FirstLink {
+    background-color: @darkest-purple;
+}
+
+footer {
+    background-color: @light-purple;
+    .white-text;
+    position: absolute;
+    bottom: 0;
+    .full-width;
+    height: 60px;
+}
+
+#footercontainer {
+    padding-top: 1%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+main {
+    .center-text;
+    margin-bottom: 60px;
+    font-family: Varela, Arial, Helvetica, sans-serif;
+}
+
+main a {
+    font-weight: bold;
+    color: @pink;
+}
+
+.navbar {
+    background-color: @light-purple;
+}
+
+.navbar-brand p {
+    color: @light-green;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: white 2px 2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #797305;
+}
+
+.navbar li {
+    .center-text;
+}
+
+.navbar li a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: @lightest-purple !important;
+    .white-text !important;
+}
+
+.nav li a:focus {
+    color: @darkest-purple !important;
+}
+
+#phone {
+    padding-left: 2%
+}
+
+.RelatedLinks {
+    .horiz-padding-4;
+}
+
+.RelatedLinks h2, .RelatedLinks h2 a {
+    text-transform: uppercase;
+    color: @light-green;
+    padding-top: 2%;
+}
+
+.RelatedLinks h3 {
+    color: @pink;
+    font-size: 2em;
+}
+
+.RelatedLinks table {
+    .auto-margin;
+}
+
+.RelatedLinks p, .RelatedLinks label {
+    color: @pale-pink;
+    font-size: 1.3em;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#DayTable {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.RelatedLinks th, .RelatedLinks td {
+    .center-text !important;
+    .white-text;
+} 
+
+.RelatedLinks em {
+    .white-text;
+}
+
+.SecondLink {
+    background-color: @darker-purple;
+}
+
+.ThirdLink {
+    background-color: @darkest-purple;
+}
+
+.topupperbar {
+	background-color: @light-green;
+	.div-bars;
+}
+
+.top-level-link {
+    .white-text;
+}
+
+.toplowerbar {
+	background-color: @light-purple;
+	height: 10px;
+	.div-bars;
+}
+
+/* ===== == = === Mobile Phone Only === = == ===== */
+
+/* Replaces Social Media (SM) Feed with SM Link Icons */
+@media (max-width: 720px) {
+    #SMFeed, #copyrightFull {
+        display: none;
+    }
+    
+    #copyrightMobile {
+        padding-top: .5%;
+        font-size: 1.2em;
+    }
+    
+    .navbar li {
+        font-size: 2em;
+    }
+    
+    input {
+        width: 60%;
+    }
+    
+    .Featured img {
+        width: 90%;
+    }
+    
+    #SMicons {
+        padding-top: .5%;
+    }
+    
+    .FirstLink h2 {
+        margin-top: 0;
+    }
+    
+    .RelatedLinks {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+    }
+    
+    textarea {
+        margin-left: 3% !important;
+    }
+}
+
+/* ===== == = === Tablet === = == ===== */
+
+@media (min-width: 720px) and (max-width: 991px) {
+    .Featured {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+/* Replaces Social Media (SM) Link Icons with SM Feed */
+    #copyrightFull, #SMFeed {
+        .center-text;
+    }
+    
+    #SMicons, #copyrightMobile, #phone {
+        display: none;
+    }
+    
+    .navbar li {
+        font-size: 1em;
+    }
+    
+    .RelatedLinks h2 {
+        font-size: 2em;
+    }
+    
+    .RelatedLinks h3 {
+        font-size: 1.8em;
+    }
+    
+    .RelatedLinks p {
+        padding-left: 4%;
+    }
+    
+    .FirstLink h2 {
+        margin-top: 0;
+    }
+}
+/* ===== == = === Desk Top === = == ===== */
+
+@media (min-width: 992px) {
+    .Featured {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .RelatedLinks {
+        background-color: @darkest-purple;
+        padding-bottom: 60px;
+    }
+    
+    #copyrightFull, #SMFeed {
+        .center-text;
+    }
+    
+    .feature-photo img {
+        width: 100%;
+    }
+    
+    #phone {
+        display: none;
+    }
+    
+    .RelatedLinks h2 {
+        font-size: 1.7em;
+    }
+    
+    .RelatedLinks h3 {
+        font-size: 1.5em;
+    }
+    
+/* Replaces Social Media (SM) Link Icons with SM Feed */
+    #SMicons, #copyrightMobile {
+        display: none;
+    }
+}

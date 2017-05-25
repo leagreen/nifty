@@ -10,6 +10,8 @@
     </section>
 
     <div class="toplowerbar"></div>
+    
+    <div class="row match-my-cols">
     <section class="RelatedLinks FirstLink col-md-4">
         <h2>Related One - Header Two</h2>
         <h3>Header Three</h3>
@@ -27,6 +29,7 @@
         <h3>Header Three</h3>
         <p>Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text HELLO Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text Paragraph Text</p>
     </section>
+    </div>
 </main>
         
 <?php include 'footer.php';?>

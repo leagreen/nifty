@@ -2,10 +2,11 @@
 
 <main>
     <section class="Featured">
-        <div class="col-md-6">
+        
         <h1>Spoken French sounds beautiful, but...	  </h1>
-        <hr>
-        <p>Can you read this?</p>
+        <div class="Featured col-md-6">
+        
+        <h2>Can you read this?</h2>
         <ul>
             <li>les toilettes sont de cette façon</li>
             <li>les touristes payent le prix fort</li>

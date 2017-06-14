@@ -2,12 +2,25 @@
     echo "<footer>
             <div class='topupperbar'></div><!--divider-->
             <div id='footercontainer'>
-                <div id='SMicons' class='col-xs-6'><img src='images/facebook.png' alt='facebook icon'>&nbsp;<img src='images/twitter.png' alt='facebook icon'></div>
-                <div id='copyrightMobile' class='col-xs-6'>&#x24B8; Copyright paragraph</div>
+
                 
-                <div id='SMFeed' class='col-xs-6'>Facebook status update&nbsp;&nbsp;</div>
-                <div id='SMFeed' class='col-xs-6'>Twitter status update</div>
-                <div id='copyrightFull'>&#x24B8; Copyright paragraph</div>
+                <div id='SMHEADER' class='col-xs-12'>
+                    <h1>Stay Updated</h1>
+                    <h2>Follow Nifty Happenings Wherever, Whenever</h2>
+                </div>
+                
+                <div id='SMFeed' class='col-md-6'>
+                    <div class='fb-page' data-href='http://www.facebook.com/cas222cascade' data-tabs='timeline' data-width='450' data-height='200' data-small-header='true' data-adapt-container-width='true' data-hide-cover='true' data-show-facepile='false'><blockquote cite='http://www.facebook.com/cas222cascade' class='fb-xfbml-parse-ignore'><a href='http://www.facebook.com/cas222cascade'>CAS 222</a></blockquote></div><br><br>
+                </div>
+                
+                <div id='SMFeed' class='col-md-6'>
+                    <a class='twitter-timeline' data-width='450' data-height='200' data-theme='light' href='https://twitter.com/pcccas222'>Tweets by pcccas222</a> <script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>
+                </div>
+                
+                <div class='col-md-12' id='copyrightFull'>
+                    <p>&#x24B8; Copyright Nifty Tours 2017</p>
+                </div>
+                
             </div><!--/.footer-container -->
         </footer>
         

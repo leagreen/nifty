@@ -2,9 +2,11 @@
 
 <main>
     <section class="Featured">
+        
+                    <h1>And this is Simplified Chinese Characters...	  </h1>
         <div class="col-md-6">
-            <h1>And this is Simplified Chinese Characters...	  </h1>
-            <p>Can you read this?</p>
+
+            <h2>Can you read this?</h2>
             <ul>
                 <li>廁所是這種方式</li>
                 <li>遊客支付全價</li>

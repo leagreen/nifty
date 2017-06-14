@@ -2,10 +2,10 @@
 
 <main>
     <section class="Featured">
-        <div class="col-md-6">
             <h1>Unforgettable Vacations</h1>
             <p><em>Paris, Athens, Kyoto and more</em></p>
-            <hr>
+        <div class="col-md-6">
+
             <p>Have you ever dreamed about</p>
             <ul>
                 <li>Seeing the Mona Lisa up close</li>
@@ -15,7 +15,9 @@
             </ul>
         </div>
         
-    <div class="col-md-6 feature-photo"><img src="images/best.png" alt="Nifty travel picture" /></div>
+    <div class="col-md-6 feature-photo">
+        <img src="images/best.png" alt="Nifty Pic">
+    </div>
     </section>
     
     <div class="toplowerbar"></div>

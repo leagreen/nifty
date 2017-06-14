@@ -2,10 +2,11 @@
 <main>
     <section class="Featured">
         <div class="row">
-            <div class="col-md-6">
                 <h1>The Paris Tour</h1>
                 <p><em>Eiffel Tower, Louvre, Montmarte and more</em></p>
                 <hr>
+            <div class="col-md-6">
+
                 <p>Top Paris Activities</p>
                 <ul>
                     <li>Spend a few hours losing yourself in the Metro</li>
@@ -35,46 +36,6 @@
         </section>
         
         <section class="RelatedLinks SecondLink col-md-4">
-            <h2>Day Trips</h2>
-            <p>Five day plan for a magical trip!</p>
-	 
-            <table border="1">
-                <tr>
-                  <th scope="col" id="DayTable">Day</th>
-                  <th scope="col">AM</th>
-                  <th scope="col">PM</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Eiffel Tower (inside and to the top)</td>
-                  <td>Pompidou Center</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Louvre Museum</td>
-                  <td>Dining and shopping on the<br />
-                    Champs Elysees</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Notre Dame Cathedral</td>
-                  <td>Dining outside the Arc de Triomphe</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Montmartre</td>
-                  <td>Moulin Rouge</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Walk along the Seine River</td>
-                  <td>Eiffel Tower (outside at night)</td>
-                </tr>
-            </table>
-            <p><a href="nifty-services.php" class="emphasized">More about Nifty services...</a></p>
-        </section>
-        
-        <section class="RelatedLinks ThirdLink col-md-4">
             <div class="tourvideo" id="quote">
                 <h2>A Louvre Moment</h2>
                 <p>Watch as a Nifty traveler experiences Paris. This can be your adventure, too!</p>
@@ -82,7 +43,7 @@
 
                 <!-- Video section  begins -->
 
-                <video id="movie" width="360" height="240" preload controls>
+                <video id="movie" preload controls>
                     <source src="video/louvre-paris.webm" type="video/webm; codecs='vp8, vorbis'" />
                     <source src="video/louvre-paris.ogv" type="video/ogg; codecs='theora, vorbis'" />
                     <source src="video/louvre-paris.mp4" />
@@ -121,6 +82,48 @@
 
                 <p><a href="nifty-tours-blog/" class="emphasized">More moments in our blog...</a></p>
             </div>
+        </section>
+        
+        
+        
+        <section class="RelatedLinks ThirdLink col-md-4">
+            <h2>Day Trips</h2>
+            <p>Five day plan for a magical trip!</p>
+	 
+            <table border="1">
+                <tr>
+                  <th scope="col" id="DayTable">Day</th>
+                  <th scope="col">AM</th>
+                  <th scope="col">PM</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Eiffel Tower (inside and to the top)</td>
+                  <td>Pompidou Center</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Louvre Museum</td>
+                  <td>Dining and shopping on the<br />
+                    Champs Elysees</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Notre Dame Cathedral</td>
+                  <td>Dining outside the Arc de Triomphe</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Montmartre</td>
+                  <td>Moulin Rouge</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Walk along the Seine River</td>
+                  <td>Eiffel Tower (outside at night)</td>
+                </tr>
+            </table>
+            <p><a href="nifty-services.php" class="emphasized">More about Nifty services...</a></p>
         </section>
         
     </div>

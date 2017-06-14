@@ -2,10 +2,12 @@
 
 <main>
     <section class="Featured">
-        <div class="col-md-6">
-            <h1>Services We Provide</h1>
+        
+                    <h1>Services We Provide</h1>
             <p><em>Guides, translators, Sherpas and more</em></p>
-            <hr>
+            
+        <div class="col-md-6">
+
             <p>If you need it, we've got it</p>
             <ul>
                 <li>Scuba instructors</li>
@@ -41,7 +43,7 @@
             <p>Major world languages spoken by 
             native and second language speakers</p>
             <p>&nbsp;</p>
-            <p><img class="mapper" src="images/language-chart.jpg" alt="Language Chart" width="610" height="377" border="0" usemap="#Map">
+            <p><img width="400px" class="mapper" src="images/language-chart.jpg" alt="Language Chart" border="0" usemap="#Map">
             <map name="Map">
               <area shape="poly" class="mapper showcoords noborder iopacity50 icolor0099ff" coords="315,204,315,72,370,77,418,99,457,127,480,165,491,203,486,238,475,260" href="chinese-translator.php" alt="Chinese language">
               <area shape="poly" class="mapper showcoords noborder iopacity50 icolorff0000" coords="316,206,214,314,189,300,170,283,158,267,150,250" href="spanish-translator.php" alt="Spanish language">

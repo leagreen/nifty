@@ -2,10 +2,11 @@
 
 <main>
     <section class="Featured">
-        <div class="col-md-6">
-            <h1>Translators who Make it Make Sense</h1>
+        
+                    <h1>Translators who Make it Make Sense</h1>
             <p><em>Speaking your language and their language and more languages</em></p>
-            <hr>
+        <div class="col-md-6">
+
             <p>Our translators have</p>
             <ul>
                 <li>Served as ambassadors and culinary experts</li>

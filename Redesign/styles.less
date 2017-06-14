@@ -1,5 +1,7 @@
 // out: styles.css
 
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Cabin|Fira+Sans');
+
 /* ===== == = === Base LESS Styles === = == ===== */
 
 .div-bars {
@@ -51,25 +53,16 @@ body {
     list-style: none;
 }
 
-#contact td {
-    padding-bottom: 2%;
-}
-
-#copyrightMobile {
-    margin-bottom: 0px;
-}
-
 .formColor {
     color: black;
 }
 
 #copyrightFull {
     font-size: 1.2em;
+    color: @pink;
+    .center-text;
 }
 
-#currency-widget {
-    width: 223px;
-}
 
 .Featured {
     display: inline-block;
@@ -77,6 +70,61 @@ body {
     .horiz-padding-4;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+.Featured li {
+    list-style-image: url(images/compass-bullet.png);
+    text-align: left !important;
+    font-size: 1.2em;
+}
+
+#contactinfo p img {
+    width: 20px !important;
+}
+
+#contactMOBILE input, #contactMOBILE textarea {
+    margin-bottom: 3%;
+}
+
+.Featured ul {
+    line-height: 2em;
+}
+
+.flexslider {
+    background: none !important;
+    border: 0px !important;
+}
+
+.flex-prev {
+    left: 20px !important;
+}
+
+.flex-next {
+    right: 20px !important;
+}
+
+.flex-nav-prev, .flex-nav-next {
+    list-style: none !important;
+}
+
+.flex-direction-nav a {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -35px !important;
+    margin-right: -40px !important;
+    padding-top: 5px !important;
+}
+
+#phone em {
+    color: @pink !important;
+}
+
+main a {
+    font-size: 1.2em;
+}
+
+#slideshow a:hover {
+    color: @darkest-purple;
 }
 
 .row.match-my-cols {
@@ -89,13 +137,12 @@ body {
 }
 
 .Featured h1 {
-    font-weight: 800;
     font-size: 3em;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .Featured h2 {
     font-size: 2.3em;
-    text-transform: uppercase;
 }
 
 .Featured h2, .Featured h3 {
@@ -106,11 +153,6 @@ body {
     font-size: 1.6em
 }
 
-.Featured ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
 .FirstLink {
     background-color: @darkest-purple;
 }
@@ -119,9 +161,12 @@ footer {
     background-color: @light-purple;
     .white-text;
     position: absolute;
-    bottom: 0;
     .full-width;
-    height: 60px;
+}
+
+footer p a {
+    text-decoration: none;
+    .white-text;
 }
 
 #footercontainer {
@@ -143,8 +188,8 @@ html {
 
 main {
     .center-text;
-    margin-bottom: 60px;
-    font-family: Varela, Arial, Helvetica, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+
 }
 
 main a {
@@ -159,7 +204,7 @@ main a {
 .navbar-brand p {
     color: @light-green;
     font-size: 2em;
-    font-weight: 600;
+    font-family: 'Archivo Black', sans-serif;
     text-shadow: white 2px 2px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #797305;
@@ -167,6 +212,9 @@ main a {
 
 .navbar li {
     .center-text;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3em;
+
 }
 
 .navbar li a {
@@ -187,13 +235,49 @@ main a {
     padding-left: 2%
 }
 
+#currency-converter {
+    width: 60%;
+    .auto-margin;
+}
+
+#currency-converter input {
+    margin-left: 3%;
+    color: black;
+}
+
+#currency-converter {
+    color: @pink;
+    font-weight: 700;
+}
+
+#currency-converter td {
+    padding-bottom: 7%;
+}
+
 .RelatedLinks {
     .horiz-padding-4;
 }
 
-.RelatedLinks h2, .RelatedLinks h2 a {
+.RelatedLinks h2, .RelatedLinks h2 a, footer h1 {
     text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
     color: @light-green;
+    .center-text
+}
+
+input, textarea, select {
+    margin-bottom: 5%;
+}
+
+footer h1 {
+    font-size: 2.3em;
+}
+
+footer h2 {
+    font-size: 1.7em;
+}
+
+.RelatedLinks h2, .RelatedLinks h2 a {
     padding-top: 2%;
 }
 
@@ -210,6 +294,38 @@ main a {
     color: @pale-pink;
     font-size: 1.3em;
 }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 
 .row {
     margin-right: 0 !important;
@@ -228,6 +344,11 @@ main a {
 
 .RelatedLinks em {
     .white-text;
+    font-size: .8em;
+}
+
+#SMFeed, #SMHEADER {
+    .center-text !important;
 }
 
 .SecondLink {
@@ -241,6 +362,7 @@ main a {
 .topupperbar {
 	background-color: @light-green;
 	.div-bars;
+    margin-top: 3px;
 }
 
 .top-level-link {
@@ -257,25 +379,42 @@ main a {
 
 /* Replaces Social Media (SM) Feed with SM Link Icons */
 @media (max-width: 720px) {
-    #SMFeed, #copyrightFull {
+    
+    main, footer {
+        font-size: 80% !important;
+    }
+    
+    .emFULL {
         display: none;
+    }
+    
+    .Featured ul {
+        width: 80%;
+        .auto-margin;
     }
     
     #copyrightMobile {
         padding-top: .5%;
         font-size: 1.2em;
+        margin-bottom: 0px;
+        .white-text !important;
     }
     
     .navbar li {
         font-size: 2em;
     }
     
-    input {
-        width: 60%;
+    #navbar li a, #phone {
+        .white-text
     }
     
     .Featured img {
         width: 90%;
+    }
+    
+    #map img {
+        width: 300px;
+        height: 300px;
     }
     
     #SMicons {
@@ -305,16 +444,22 @@ main a {
     }
 
 /* Replaces Social Media (SM) Link Icons with SM Feed */
-    #copyrightFull, #SMFeed {
-        .center-text;
-    }
     
-    #SMicons, #copyrightMobile, #phone {
+    #phone, .emFULL {
         display: none;
     }
     
     .navbar li {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+    
+    #currency-converter {
+        width: 40%;
+    }
+
+    .Featured ul {
+        width: 60%;
+        .auto-margin;
     }
     
     .RelatedLinks h2 {
@@ -346,10 +491,6 @@ main a {
         padding-bottom: 60px;
     }
     
-    #copyrightFull, #SMFeed {
-        .center-text;
-    }
-    
     .feature-photo img {
         width: 100%;
     }
@@ -358,8 +499,13 @@ main a {
         display: none;
     }
     
+    footer h2 {
+        .center-text;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
     .RelatedLinks h2 {
-        font-size: 1.7em;
+        font-size: 2.3em;
     }
     
     .RelatedLinks h3 {

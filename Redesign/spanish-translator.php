@@ -2,10 +2,11 @@
 
 <main>
     <section class="Featured">
+        
+                    <h1>You may have taken Spanish in High School, but...	  </h1>
         <div class="col-md-6">
-            <h1>You may have taken Spanish in High School, but...	  </h1>
-            <hr>
-            <p>Can you read this?</p>
+
+            <h2>Can you read this?</h2>
             <ul>
                 <li>El baño es de esta forma</li>
                 <li>Los turistas pagan el precio completo</li>
